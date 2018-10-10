@@ -31,12 +31,12 @@ namespace StuctsAndEnums
             {
                 if (currencyCheck == Currency.USD)
                 {
-                    double exchangeToYen = amount * USDtoYen;
+                    double exchangeToYen = amount * YentoUSD;
                     return exchangeToYen;
                 }
                 else 
                 {
-                    double exchangeToUSD = amount * YentoUSD;
+                    double exchangeToUSD = amount * USDtoYen;
                     return exchangeToUSD;
                 }
             }
@@ -54,7 +54,7 @@ namespace StuctsAndEnums
             }
             else
             {
-                double objTwoConv = objTwo.converter(objTwo.currencyUnit);
+                double objTwoConv = objTwo.converter(objOne.currencyUnit);
 
                 double amount = objOne.amount + objTwoConv;
                 Currency currency = objOne.currencyUnit;
@@ -62,15 +62,65 @@ namespace StuctsAndEnums
             }
 
         }
+
+        public override string ToString()
+        {
+            return "The Money is: "+ currencyUnit + " " + amount;
+        }
     }
 
 
     class Test
     {
-        public void Main()
+        public static void Main()
         {
-            Money start = new Money(33.75, Currency.USD);
-            Console.WriteLine(start.currencyUnit);
+
+            //Yen To USD Objects Created
+            Money USDobjectOne = new Money(33.75, Currency.USD);
+            Money YenobjectOne = new Money(4000.96 ,Currency.Yen);
+            Money USDobjectTwo = USDobjectOne + YenobjectOne;
+
+            //No Conversion Needed Objects
+            Money YenobjectFive = new Money(45677.21, Currency.Yen);
+            Money YenobjectSix = new Money(442222.75, Currency.Yen);
+            Money YenObjectAdd = YenobjectFive + YenobjectSix;
+
+            //USD To Yen Objects Created
+            Money YenobjectTen = new Money(8577.21, Currency.Yen);
+            Money USDobjectTen = new Money(224.75, Currency.USD);
+            Money YenObjectConv = YenobjectTen + USDobjectTen;
+
+            //Yen To USD Print outs
+            Console.WriteLine("*********************************");
+            Console.WriteLine("\tYen to USD Conversion");
+            Console.WriteLine("*********************************");
+            Console.WriteLine(YenobjectOne);
+            Console.WriteLine("Yen to USD: USD {0}", YenobjectOne.converter(Currency.USD));
+
+            Console.WriteLine(USDobjectOne);
+            Console.WriteLine(USDobjectTwo);
+            Console.WriteLine("*********************************");
+
+            //USD to Yen Print outs
+            Console.WriteLine("*********************************");
+            Console.WriteLine("\tUSD to Yen Conversion");
+            Console.WriteLine("*********************************");
+            Console.WriteLine(USDobjectTen);
+            Console.WriteLine("USD to Yen: Yen {0}", USDobjectTen.converter(Currency.Yen));
+
+            Console.WriteLine(YenobjectTen);
+            Console.WriteLine(YenObjectConv);
+            Console.WriteLine("*********************************");
+
+            //No conversion Needed Prints
+            Console.WriteLine("*********************************");
+            Console.WriteLine("\tNo Conversion");
+            Console.WriteLine("*********************************");
+            Console.WriteLine(YenobjectFive);
+            Console.WriteLine(YenobjectSix);
+            Console.WriteLine(YenObjectAdd);
+            Console.WriteLine("*********************************");
+
         }
     }
 }

@@ -1,3 +1,10 @@
 C:\projects\C-Lab-Five-Enums-and-Structs\obj\Debug\netcoreapp2.0\C-Lab-Five-Enums-and-Structs.csproj.CoreCompileInputs.cache
 C:\projects\C-Lab-Five-Enums-and-Structs\obj\Debug\netcoreapp2.0\C-Lab-Five-Enums-and-Structs.AssemblyInfoInputs.cache
 C:\projects\C-Lab-Five-Enums-and-Structs\obj\Debug\netcoreapp2.0\C-Lab-Five-Enums-and-Structs.AssemblyInfo.cs
+C:\projects\C-Lab-Five-Enums-and-Structs\bin\Debug\netcoreapp2.0\C-Lab-Five-Enums-and-Structs.deps.json
+C:\projects\C-Lab-Five-Enums-and-Structs\bin\Debug\netcoreapp2.0\C-Lab-Five-Enums-and-Structs.runtimeconfig.json
+C:\projects\C-Lab-Five-Enums-and-Structs\bin\Debug\netcoreapp2.0\C-Lab-Five-Enums-and-Structs.runtimeconfig.dev.json
+C:\projects\C-Lab-Five-Enums-and-Structs\bin\Debug\netcoreapp2.0\C-Lab-Five-Enums-and-Structs.dll
+C:\projects\C-Lab-Five-Enums-and-Structs\bin\Debug\netcoreapp2.0\C-Lab-Five-Enums-and-Structs.pdb
+C:\projects\C-Lab-Five-Enums-and-Structs\obj\Debug\netcoreapp2.0\C-Lab-Five-Enums-and-Structs.dll
+C:\projects\C-Lab-Five-Enums-and-Structs\obj\Debug\netcoreapp2.0\C-Lab-Five-Enums-and-Structs.pdb
