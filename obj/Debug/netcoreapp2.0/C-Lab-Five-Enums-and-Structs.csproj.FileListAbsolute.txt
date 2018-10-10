@@ -1,0 +1,3 @@
+C:\projects\C-Lab-Five-Enums-and-Structs\obj\Debug\netcoreapp2.0\C-Lab-Five-Enums-and-Structs.csproj.CoreCompileInputs.cache
+C:\projects\C-Lab-Five-Enums-and-Structs\obj\Debug\netcoreapp2.0\C-Lab-Five-Enums-and-Structs.AssemblyInfoInputs.cache
+C:\projects\C-Lab-Five-Enums-and-Structs\obj\Debug\netcoreapp2.0\C-Lab-Five-Enums-and-Structs.AssemblyInfo.cs
